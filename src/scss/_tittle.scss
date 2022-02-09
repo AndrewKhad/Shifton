@@ -2,6 +2,10 @@
     background: url(../images/Main_picture.jpg);
     background-size: cover;
     background-position: 50% 50%;
+    margin-bottom: 100px;
+    @media (max-width: 768px) {
+        margin-bottom: 44px;
+    }
     &__box {
         display: flex;
         flex-direction: column;

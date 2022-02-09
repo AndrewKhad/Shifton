@@ -33,7 +33,7 @@ ul li {
 }
 
 .main {
-    flex: 1 1 50%;
+    flex: 1 1 auto;
 }
 body.lock {
     overflow: hidden;
@@ -43,3 +43,5 @@ $one: "Roboto";
 $sec: "Noto Sans";
 @import "header";
 @import "tittle";
+@import "opportunity";
+@import "footer";

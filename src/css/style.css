@@ -46,8 +46,8 @@ ul li {
 
 .main {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 body.lock {
@@ -133,8 +133,7 @@ body.lock {
 @media (max-width: 992px) {
   .header__navbar {
     position: fixed;
-    opacity: 0;
-    top: 0;
+    top: -100%;
     left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -156,7 +155,7 @@ body.lock {
     transition: 0.5s;
   }
   .header__navbar.work {
-    opacity: 1;
+    top: 0;
   }
 }
 
@@ -293,6 +292,13 @@ body.lock {
   background: url(../images/Main_picture.jpg);
   background-size: cover;
   background-position: 50% 50%;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+  .tittle {
+    margin-bottom: 44px;
+  }
 }
 
 .tittle__box {
@@ -388,5 +394,195 @@ body.lock {
   font-size: 20px;
   line-height: 23px;
   color: #ffffff;
+}
+
+.opportunity__tittle {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  color: #434449;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .opportunity__tittle {
+    font-size: 28px;
+  }
+}
+
+.opportunity__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -12px;
+}
+
+@media (max-width: 992px) {
+  .opportunity__box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.opportunity__picture {
+  margin-bottom: 20px;
+}
+
+.opportunity__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+  background: #f9f9f9;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin: 0 12px;
+}
+
+@media (max-width: 992px) {
+  .opportunity__item {
+    margin: 0 7px 24px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 48%;
+            flex: 1 1 48%;
+  }
+}
+
+.opportunity__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  padding: 26px;
+}
+
+.opportunity__block {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin-bottom: 40px;
+}
+
+.opportunity__name {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 26px;
+  color: #29aae3;
+  margin-bottom: 20px;
+}
+
+.opportunity__text {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #434449;
+  margin-bottom: 20px;
+}
+
+.opportunity__elem {
+  font-family: "Noto Sans";
+  font-size: 16px;
+  line-height: 22px;
+  color: #434449;
+  margin-bottom: 12px;
+}
+
+.opportunity__elem::before {
+  content: url(../images/round.png);
+  padding-right: 8px;
+}
+
+.opportunity__button {
+  background: #54a757;
+  max-width: 165px;
+}
+
+.footer {
+  background: #53a8dd;
+  font-family: "Roboto";
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 55px 0 24px;
+  border-bottom: 1px solid #c4c4c4;
+  margin-bottom: 30px;
+}
+
+.footer__item {
+  padding-right: 26px;
+}
+
+.footer__item:last-child {
+  padding-right: 0;
+}
+
+.footer__item a {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer__links {
+  margin-bottom: 30px;
+}
+
+.footer__links img {
+  margin-right: 20px;
+}
+
+.footer__links img:last-child {
+  margin-right: 0;
+}
+
+.footer__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 85px;
+}
+
+@media (max-width: 768px) {
+  .footer__info {
+    margin-bottom: 50px;
+  }
+}
+
+.footer__info span {
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer__info span {
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
