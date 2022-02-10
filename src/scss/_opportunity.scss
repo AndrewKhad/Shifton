@@ -1,4 +1,12 @@
 .opportunity {
+    margin-bottom: 100px;
+    @media (max-width: 1024px) {
+        margin-bottom: 70px;
+    }
+    @media (max-width: 768px) {
+        margin-bottom: 45px;
+    }
+
     &__tittle {
         font-family: $one;
         font-weight: 500;
@@ -7,9 +15,6 @@
         color: #434449;
         text-align: center;
         margin-bottom: 40px;
-        @media (max-width: 768px) {
-            font-size: 28px;
-        }
     }
     &__box {
         display: flex;
@@ -39,6 +44,9 @@
         flex-direction: column;
         height: 100%;
         padding: 26px;
+        @media (max-width: 768px) {
+            padding: 0 60px;
+        }
     }
     &__block {
         flex: 1 1 auto;
