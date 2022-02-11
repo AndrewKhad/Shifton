@@ -1,0 +1,96 @@
+.video {
+    margin-bottom: 100px;
+    @media (max-width: 768px) {
+        margin-bottom: 30px;
+    }
+    &__wrap {
+    }
+
+    &__tittle {
+        font-family: $one;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        text-align: center;
+        color: #434449;
+        margin-bottom: 50px;
+        @media (max-width: 1024px) {
+            font-size: 24px;
+        }
+        @media (max-width: 425px) {
+            font-size: 18px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        & iframe {
+            margin-bottom: 100px;
+            @media (max-width: 1024px) {
+                max-width: 700px;
+                max-height: 390px;
+            }
+            @media (max-width: 768px) {
+                max-width: 500px;
+                max-height: 280px;
+                margin-bottom: 70px;
+            }
+            @media (max-width: 600px) {
+                max-width: 400px;
+                max-height: 225px;
+                margin-bottom: 50px;
+            }
+            @media (max-width: 425px) {
+                max-width: 300px;
+                max-height: 170px;
+            }
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        font-size: 26px;
+        line-height: 30px;
+        text-align: center;
+        color: #434449;
+        margin-bottom: 60px;
+        @media (max-width: 1024px) {
+            font-size: 18px;
+        }
+        @media (max-width: 425px) {
+            font-size: 12px;
+            margin-bottom: 30px;
+        }
+        & a,
+        span {
+            font-family: $one;
+            font-size: 26px;
+            line-height: 30px;
+            margin-bottom: 20px;
+            @media (max-width: 1024px) {
+                font-size: 22px;
+            }
+            @media (max-width: 425px) {
+                font-size: 18px;
+            }
+        }
+        & a {
+            color: #53a8dd;
+        }
+    }
+
+    &__links {
+        display: flex;
+    }
+
+    &__link {
+        &:hover {
+            transform: scale(1.2);
+            transition: 0.5s;
+        }
+    }
+}

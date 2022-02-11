@@ -1,4 +1,11 @@
 .info {
+    margin-bottom: 100px;
+    @media (max-width: 1024px) {
+        margin-bottom: 65px;
+    }
+    @media (max-width: 768px) {
+        margin-bottom: 45px;
+    }
     &__box {
     }
 
@@ -61,14 +68,27 @@
 
     &__button {
         margin-top: 30px;
+        &:hover {
+            transform: scale(1.05);
+            transition: 0.5s;
+        }
         &-blue-button {
             background-color: #29aae3;
+            &:active {
+                background: #9033f9;
+            }
         }
         &-purple-button {
             background-color: #9033f9;
+            &:active {
+                background: #54a757;
+            }
         }
         &-pink-button {
             background-color: #ff5966;
+            &:active {
+                background: #54a757;
+            }
         }
         @media (max-width: 768px) {
             margin: 30px auto 0;

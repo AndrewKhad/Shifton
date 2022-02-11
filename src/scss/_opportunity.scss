@@ -89,5 +89,12 @@
     &__button {
         background: #54a757;
         max-width: 165px;
+        &:hover {
+            transform: scale(1.05);
+            transition: 0.5s;
+        }
+        &:active {
+            background: #0062cc;
+        }
     }
 }
